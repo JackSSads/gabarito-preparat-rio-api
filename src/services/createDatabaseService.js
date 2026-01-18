@@ -2,10 +2,11 @@ const { v4 } = require("uuid");
 const { hashSync } = require("bcrypt");
 const logger = require("../../logger");
 const {
-    create_table_question_options,
-    create_table_questions,
-    create_table_ranking,
     create_table_user,
+    create_table_questions,
+    create_table_question_options,
+    create_table_ranking,
+    create_table_user_question_answer,
     insert_into_first_user
 } = require("../repositores/create_database");
 
@@ -14,10 +15,11 @@ const create_database = async () => {
         const first_id_user = v4();
         const password_hashed = hashSync("adminmanager", 10);
         await Promise.all([
-            create_table_question_options(),
-            create_table_questions(),
-            create_table_ranking(),
             create_table_user(),
+            create_table_questions(),
+            create_table_question_options(),
+            create_table_ranking(),
+            create_table_user_question_answer(),
             insert_into_first_user(first_id_user, password_hashed)
         ]);
 

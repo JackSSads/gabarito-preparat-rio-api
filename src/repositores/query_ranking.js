@@ -37,7 +37,6 @@ const query_get_ranking = () => {
             WHERE u.role <> 'ADMIN'
             GROUP BY u.id_user, u.name, us.score
             ORDER BY us.score DESC;
-
         `;
 
         pool.query(sql, (err, result) => {
