@@ -17,8 +17,6 @@ app.use(cors({
     allowedHeaders: ["Content-Type", "Authorization"],
 }));
 
-console.log(process.env.URL_FRONT)
-
 const { isAuthenticated } = require("./src/resources/isAtuthenticaded");
 
 const authRouter = require("./src/api/router/auth");
