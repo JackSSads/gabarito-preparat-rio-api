@@ -1,0 +1,650 @@
+[
+  {
+    "question": "Qual o sinônimo de 'feliz'?",
+    "options": ["Triste", "Contente", "Zangado", "Cansado"],
+    "correct_answer": 1,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "Complete a frase: 'Apesar de...',",
+    "options": ["...estar chovendo.", "...ser difícil.", "...estar cansado.", "...ser bonito."],
+    "correct_answer": 0,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "Identifique a alternativa que apresenta uma oração absoluta.",
+    "options": ["Eu estudo para a prova.", "Quando ele chegou,...", "Como está o tempo hoje?", "Ela gosta de ler livros."],
+    "correct_answer": 0,
+    "difficulty": "MEDIUM",
+    "subject": "POR"
+  },
+  {
+    "question": "Qual a função do verbo 'correr' na frase: 'Eu corro no parque'?",
+    "options": ["Objeto", "Verbo", "Adjetivo", "Advérbio"],
+    "correct_answer": 1,
+    "difficulty": "MEDIUM",
+    "subject": "POR"
+  },
+  {
+    "question": "Qual a classificação gramatical da palavra 'veloz'?",
+    "options": ["Adjetivo", "Advérbio", "Substantivo", "Verbo"],
+    "correct_answer": 0,
+    "difficulty": "MEDIUM",
+    "subject": "POR"
+  },
+  {
+    "question": "Em que sentido a palavra 'melhorar' é usada na frase: 'É preciso melhorar os resultados'?",
+    "options": ["Aumentar a quantidade", "Melhorar a qualidade", "Diminuir o tempo", "Reduzir o custo"],
+    "correct_answer": 1,
+    "difficulty": "MEDIUM",
+    "subject": "POR"
+  },
+  {
+    "question": "Assinale a alternativa que apresenta um exemplo de metáfora.",
+    "options": ["A rosa é vermelha.", "Ele corre como um raio.", "A chuva molhou a terra.", "Ela cantava uma canção."],
+    "correct_answer": 1,
+    "difficulty": "MEDIUM",
+    "subject": "POR"
+  },
+  {
+    "question": "Qual o significado da palavra 'epifania'?",
+    "options": ["Um dia de festa.", "Revelação divina.", "Um evento comum.", "Uma doença grave."],
+    "correct_answer": 1,
+    "difficulty": "MEDIUM",
+    "subject": "POR"
+  },
+  {
+    "question": "Em 'A vida é bela', o que significa a frase?",
+    "options": ["A vida é difícil e sofrida", "A vida é sempre triste", "A vida é linda e valiosa", "A vida é curta e passageira"],
+    "correct_answer": 2,
+    "difficulty": "HARD",
+    "subject": "POR"
+  },
+  {
+    "question": "Identifique a figura de linguagem presente na frase: 'O sol sorria'.",
+    "options": ["Personificação", "Metáfora", "Hipérbole", "Comparação"],
+    "correct_answer": 0,
+    "difficulty": "HARD",
+    "subject": "POR"
+  },
+  {
+    "question": "Qual o sentido da palavra 'resiliência'?",
+    "options": ["Força física", "Capacidade de se recuperar", "Falta de empatia", "Dificuldade de aprendizado"],
+    "correct_answer": 1,
+    "difficulty": "HARD",
+    "subject": "POR"
+  },
+  {
+    "question": "Calcule: 5 + 7 × 3 − 4",
+    "options": ["22", "18", "16", "14"],
+    "correct_answer": 0,
+    "difficulty": "EASY",
+    "subject": "MAT"
+  },
+  {
+    "question": "Qual o resultado de 2³ + 5² ?",
+    "options": ["33", "30", "25", "17"],
+    "correct_answer": 0,
+    "difficulty": "EASY",
+    "subject": "MAT"
+  },
+  {
+    "question": "Resolva: 120 ÷ 12 + 8 − 5",
+    "options": ["13", "15", "18", "20"],
+    "correct_answer": 0,
+    "difficulty": "MEDIUM",
+    "subject": "MAT"
+  },
+  {
+    "question": "Qual a área de um retângulo com base 8 cm e altura 5 cm?",
+    "options": ["12 cm²", "40 cm²", "80 cm²", "50 cm²"],
+    "correct_answer": 1,
+    "difficulty": "MEDIUM",
+    "subject": "MAT"
+  },
+  {
+    "question": "Se um carro percorre 120 km em 2 horas, qual a sua velocidade média?",
+    "options": ["60 km/h", "80 km/h", "100 km/h", "120 km/h"],
+    "correct_answer": 0,
+    "difficulty": "MEDIUM",
+    "subject": "MAT"
+  },
+  {
+    "question": "Qual o valor de x na equação: 3x + 7 = 22?",
+    "options": ["3", "5", "7", "9"],
+    "correct_answer": 1,
+    "difficulty": "MEDIUM",
+    "subject": "MAT"
+  },
+  {
+    "question": "Uma piscina retangular tem 10 metros de comprimento e 6 metros de largura. Qual a sua área?",
+    "options": ["16 m²", "60 m²", "80 m²", "600 m²"],
+    "correct_answer": 1,
+    "difficulty": "MEDIUM",
+    "subject": "MAT"
+  },
+  {
+    "question": "Calcule: 15% de 80",
+    "options": ["12", "15", "18", "20"],
+    "correct_answer": 0,
+    "difficulty": "MEDIUM",
+    "subject": "MAT"
+  },
+  {
+    "question": "Um agricultor plantou 25 pés de tomate e 18 pés de pimentão. Quantos pés ele plantou no total?",
+    "options": ["33", "43", "37", "42"],
+    "correct_answer": 1,
+    "difficulty": "MEDIUM",
+    "subject": "MAT"
+  },
+  {
+    "question": "Qual a sequência numérica: 2, 4, 6, 8, ...?",
+    "options": ["1, 3, 5", "9, 11, 13", "10, 12, 14", "20, 22, 24"],
+    "correct_answer": 2,
+    "difficulty": "HARD",
+    "subject": "MAT"
+  },
+  {
+    "question": "Qual o resultado da raiz quadrada de 144?",
+    "options": ["11", "12", "13", "14"],
+    "correct_answer": 1,
+    "difficulty": "HARD",
+    "subject": "MAT"
+  },
+  {
+    "question": "Qual é a principal missão da Marinha do Brasil durante a Cúpula dos BRICS?",
+    "options": [
+      "Conduzir debates entre líderes mundiais.",
+      "Fiscalizar o comércio marítimo internacional.",
+      "Garantir a segurança marítima e litorânea no Rio de Janeiro.",
+      "Promover eventos culturais nas praias cariocas.",
+      "Treinar novos marinheiros na Marina da Glória."
+    ],
+    "correct_answer": 2,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "Quantos militares e meios navais/aeronavais participam da operação?",
+    "options": [
+      "2 mil militares e mais de 100 meios.",
+      "1.000 militares e 80 meios.",
+      "500 militares e 50 meios.",
+      "3 mil militares e 200 meios.",
+      "Apenas tropas estrangeiras e da Polícia Militar."
+    ],
+    "correct_answer": 0,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "De que forma a atuação terrestre da FNC complementa a segurança do evento?",
+    "options": [
+      "Desfiles cívicos e ações de limpeza urbana.",
+      "Proteção dos chefes de estado em salas de reunião.",
+      "Bloqueios de trânsito e isolamento das praias.",
+      "Vigilância de perímetro, resposta tática e ações NBQR.",
+      "Ajuda humanitária e distribuição de alimentos."
+    ],
+    "correct_answer": 3,
+    "difficulty": "MEDIUM",
+    "subject": "POR"
+  },
+  {
+    "question": "Por que a atuação da Marinha é considerada estratégica para a segurança do evento?",
+    "options": [
+      "Porque substitui completamente as forças policiais locais.",
+      "Porque cobre tanto áreas marítimas quanto terrestres sensíveis.",
+      "Porque impede a entrada de qualquer navio na costa do Brasil.",
+      "Porque realiza ações de espionagem contra países inimigos.",
+      "Porque limita o acesso da imprensa aos eventos."
+    ],
+    "correct_answer": 1,
+    "difficulty": "MEDIUM",
+    "subject": "POR"
+  },
+  {
+    "question": "Qual opção melhor resume a importância da atuação da Marinha na GLO da Cúpula dos BRICS?",
+    "options": [
+      "Demonstrar força militar em ambiente urbano.",
+      "Evitar a aproximação de embarcações turísticas.",
+      "Ampliar a frota naval no Norte e Nordeste.",
+      "Treinar novos recrutas para ações internacionais.",
+      "Integrar esforços com outras instituições para garantir um ambiente seguro."
+    ],
+    "correct_answer": 4,
+    "difficulty": "MEDIUM",
+    "subject": "POR"
+  },
+  {
+    "question": "No trecho “A Marinha do Brasil realiza a segurança marítima e litorânea da cidade do Rio de Janeiro”, o verbo “realiza” concorda com:",
+    "options": [
+      "Cidade",
+      "Brasil",
+      "Segurança",
+      "Marinha",
+      "Rio de Janeiro"
+    ],
+    "correct_answer": 3,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "Em “A Força promoverá interdições de áreas marítimas”, o termo destacado exerce a função de:",
+    "options": [
+      "Sujeito",
+      "Objeto direto",
+      "Predicativo",
+      "Adjunto adnominal",
+      "Aposto"
+    ],
+    "correct_answer": 1,
+    "difficulty": "MEDIUM",
+    "subject": "POR"
+  },
+  {
+    "question": "Assinale a alternativa com concordância verbal correta.",
+    "options": [
+      "As autoridades compareceu à reunião.",
+      "A Marinha atuaram com precisão.",
+      "Os navios patrulham a costa fluminense.",
+      "A tropa chegaram rapidamente.",
+      "O helicóptero e o carro blindado sobrevoou a área."
+    ],
+    "correct_answer": 2,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "Assinale a frase em que a concordância nominal está incorreta.",
+    "options": [
+      "As viaturas estavam limpas e organizadas.",
+      "As tropas estavam mobilizadas e alertas.",
+      "O planejamento tático e estratégico foi realizado com precisão.",
+      "Os helicópteros estavam prontos e operacionais.",
+      "As forças envolvidas estavam preparadas e equipado."
+    ],
+    "correct_answer": 4,
+    "difficulty": "MEDIUM",
+    "subject": "POR"
+  },
+  {
+    "question": "Assinale a alternativa que contenha um adjunto adverbial de lugar.",
+    "options": [
+      "A tropa chegou rapidamente.",
+      "O evento ocorreu no Rio de Janeiro.",
+      "As autoridades chegaram pontualmente.",
+      "As forças foram mobilizadas ontem.",
+      "Os helicópteros sobrevoaram discretamente."
+    ],
+    "correct_answer": 1,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "Qual foi o principal objetivo da Sessão Solene realizada na Câmara dos Deputados?",
+    "options": [
+      "Comemorar o fim da Segunda Guerra Mundial.",
+      "Discutir o papel da ONU.",
+      "Homenagear os 80 anos da participação brasileira na Segunda Guerra Mundial.",
+      "Criar novas leis para as Forças Armadas.",
+      "Julgar ações da Marinha durante o conflito."
+    ],
+    "correct_answer": 2,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "Segundo o texto, o que marcou a entrada do Brasil na Segunda Guerra Mundial?",
+    "options": [
+      "Apoio logístico à FEB.",
+      "Criação da ONU.",
+      "Ataque a Pearl Harbor.",
+      "Torpedeamentos de navios mercantes no litoral brasileiro.",
+      "Morte de civis em território nacional."
+    ],
+    "correct_answer": 3,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "O vídeo exibido na abertura da sessão tinha como foco principal:",
+    "options": [
+      "Mostrar o poder naval atual do Brasil.",
+      "Apresentar depoimentos de veteranos.",
+      "Retratar ações da Marinha Brasileira durante a Segunda Guerra Mundial.",
+      "Explicar a origem do conflito.",
+      "Promover novos projetos de defesa."
+    ],
+    "correct_answer": 2,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "Segundo o texto, os militares enfrentaram não apenas o inimigo, mas também:",
+    "options": [
+      "Fome, sede e doenças.",
+      "Frio, incerteza e saudade.",
+      "Fadiga, protestos e miséria.",
+      "Corrupção e abandono.",
+      "Epidemias e censura."
+    ],
+    "correct_answer": 1,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "Assinale a alternativa em que o verbo está no modo indicativo.",
+    "options": [
+      "Que lutem com bravura!",
+      "Se tivessem participado, seriam lembrados.",
+      "Eles lutaram com coragem.",
+      "Participe da cerimônia.",
+      "É preciso que eles cheguem cedo."
+    ],
+    "correct_answer": 2,
+    "difficulty": "MEDIUM",
+    "subject": "POR"
+  },
+  {
+    "question": "Assinale a alternativa em que há pronome demonstrativo.",
+    "options": [
+      "Lutaram movidos por amor à Nação.",
+      "Que isso seja legado e comemorado.",
+      "Eles acreditavam na vitória.",
+      "Enfrentaram inclusive o medo.",
+      "A guerra foi longa."
+    ],
+    "correct_answer": 1,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "Em “A atuação da Marinha foi marcante”, o artigo “A” é:",
+    "options": [
+      "Indefinido masculino",
+      "Definido feminino",
+      "Indefinido feminino",
+      "Definido masculino",
+      "Interjeição feminina"
+    ],
+    "correct_answer": 1,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "Assinale a alternativa que contém uma conjunção coordenativa aditiva.",
+    "options": [
+      "mas",
+      "portanto",
+      "e",
+      "porque",
+      "embora"
+    ],
+    "correct_answer": 2,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "Qual das palavras a seguir é uma proparoxítona?",
+    "options": [
+      "Marinha",
+      "Militar",
+      "Pública",
+      "Soldado",
+      "Nação"
+    ],
+    "correct_answer": 2,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "Qual é a principal missão da Marinha do Brasil durante a Cúpula dos BRICS?",
+    "options": [
+      "Conduzir debates entre líderes mundiais.",
+      "Fiscalizar o comércio marítimo internacional.",
+      "Garantir a segurança marítima e litorânea no Rio de Janeiro.",
+      "Promover eventos culturais nas praias cariocas.",
+      "Treinar novos marinheiros na Marina da Glória."
+    ],
+    "correct_answer": 2,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "Quantos militares e meios navais/aeronavais participam da operação?",
+    "options": [
+      "2 mil militares e mais de 100 meios.",
+      "1.000 militares e 80 meios.",
+      "500 militares e 50 meios.",
+      "3 mil militares e 200 meios.",
+      "Apenas tropas estrangeiras e da Polícia Militar."
+    ],
+    "correct_answer": 0,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "De que forma a atuação terrestre da FNC complementa a segurança do evento?",
+    "options": [
+      "Desfiles cívicos e ações de limpeza urbana.",
+      "Proteção dos chefes de estado em salas de reunião.",
+      "Bloqueios de trânsito e isolamento das praias.",
+      "Vigilância de perímetro, resposta tática e ações NBQR.",
+      "Ajuda humanitária e distribuição de alimentos."
+    ],
+    "correct_answer": 3,
+    "difficulty": "MEDIUM",
+    "subject": "POR"
+  },
+  {
+    "question": "Por que a atuação da Marinha é considerada estratégica para a segurança do evento?",
+    "options": [
+      "Porque substitui completamente as forças policiais locais.",
+      "Porque cobre tanto áreas marítimas quanto terrestres sensíveis.",
+      "Porque impede a entrada de qualquer navio na costa do Brasil.",
+      "Porque realiza ações de espionagem contra países inimigos.",
+      "Porque limita o acesso da imprensa aos eventos."
+    ],
+    "correct_answer": 1,
+    "difficulty": "MEDIUM",
+    "subject": "POR"
+  },
+  {
+    "question": "Qual opção melhor resume a importância da atuação da Marinha na GLO da Cúpula dos BRICS?",
+    "options": [
+      "Demonstrar força militar em ambiente urbano.",
+      "Evitar a aproximação de embarcações turísticas.",
+      "Ampliar a frota naval no Norte e Nordeste.",
+      "Treinar novos recrutas para ações internacionais.",
+      "Integrar esforços com outras instituições para garantir um ambiente seguro."
+    ],
+    "correct_answer": 4,
+    "difficulty": "MEDIUM",
+    "subject": "POR"
+  },
+  {
+    "question": "No trecho “A Marinha do Brasil realiza a segurança marítima e litorânea da cidade do Rio de Janeiro”, o verbo “realiza” concorda com:",
+    "options": [
+      "Cidade",
+      "Brasil",
+      "Segurança",
+      "Marinha",
+      "Rio de Janeiro"
+    ],
+    "correct_answer": 3,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "Em “A Força promoverá interdições de áreas marítimas”, o termo destacado exerce a função de:",
+    "options": [
+      "Sujeito",
+      "Objeto direto",
+      "Predicativo",
+      "Adjunto adnominal",
+      "Aposto"
+    ],
+    "correct_answer": 1,
+    "difficulty": "MEDIUM",
+    "subject": "POR"
+  },
+  {
+    "question": "Assinale a alternativa com concordância verbal correta.",
+    "options": [
+      "As autoridades compareceu à reunião.",
+      "A Marinha atuaram com precisão.",
+      "Os navios patrulham a costa fluminense.",
+      "A tropa chegaram rapidamente.",
+      "O helicóptero e o carro blindado sobrevoou a área."
+    ],
+    "correct_answer": 2,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "Assinale a frase em que a concordância nominal está incorreta.",
+    "options": [
+      "As viaturas estavam limpas e organizadas.",
+      "As tropas estavam mobilizadas e alertas.",
+      "O planejamento tático e estratégico foi realizado com precisão.",
+      "Os helicópteros estavam prontos e operacionais.",
+      "As forças envolvidas estavam preparadas e equipado."
+    ],
+    "correct_answer": 4,
+    "difficulty": "MEDIUM",
+    "subject": "POR"
+  },
+  {
+    "question": "Assinale a alternativa que contenha um adjunto adverbial de lugar.",
+    "options": [
+      "A tropa chegou rapidamente.",
+      "O evento ocorreu no Rio de Janeiro.",
+      "As autoridades chegaram pontualmente.",
+      "As forças foram mobilizadas ontem.",
+      "Os helicópteros sobrevoaram discretamente."
+    ],
+    "correct_answer": 1,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "Qual foi o principal objetivo da Sessão Solene realizada na Câmara dos Deputados?",
+    "options": [
+      "Comemorar o fim da Segunda Guerra Mundial.",
+      "Discutir o papel da ONU.",
+      "Homenagear os 80 anos da participação brasileira na Segunda Guerra Mundial.",
+      "Criar novas leis para as Forças Armadas.",
+      "Julgar ações da Marinha durante o conflito."
+    ],
+    "correct_answer": 2,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "Segundo o texto, o que marcou a entrada do Brasil na Segunda Guerra Mundial?",
+    "options": [
+      "Apoio logístico à FEB.",
+      "Criação da ONU.",
+      "Ataque a Pearl Harbor.",
+      "Torpedeamentos de navios mercantes no litoral brasileiro.",
+      "Morte de civis em território nacional."
+    ],
+    "correct_answer": 3,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "O vídeo exibido na abertura da sessão tinha como foco principal:",
+    "options": [
+      "Mostrar o poder naval atual do Brasil.",
+      "Apresentar depoimentos de veteranos.",
+      "Retratar ações da Marinha Brasileira durante a Segunda Guerra Mundial.",
+      "Explicar a origem do conflito.",
+      "Promover novos projetos de defesa."
+    ],
+    "correct_answer": 2,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "Segundo o texto, os militares enfrentaram não apenas o inimigo, mas também:",
+    "options": [
+      "Fome, sede e doenças.",
+      "Frio, incerteza e saudade.",
+      "Fadiga, protestos e miséria.",
+      "Corrupção e abandono.",
+      "Epidemias e censura."
+    ],
+    "correct_answer": 1,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "Assinale a alternativa em que o verbo está no modo indicativo.",
+    "options": [
+      "Que lutem com bravura!",
+      "Se tivessem participado, seriam lembrados.",
+      "Eles lutaram com coragem.",
+      "Participe da cerimônia.",
+      "É preciso que eles cheguem cedo."
+    ],
+    "correct_answer": 2,
+    "difficulty": "MEDIUM",
+    "subject": "POR"
+  },
+  {
+    "question": "Assinale a alternativa em que há pronome demonstrativo.",
+    "options": [
+      "Lutaram movidos por amor à Nação.",
+      "Que isso seja legado e comemorado.",
+      "Eles acreditavam na vitória.",
+      "Enfrentaram inclusive o medo.",
+      "A guerra foi longa."
+    ],
+    "correct_answer": 1,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "Em “A atuação da Marinha foi marcante”, o artigo “A” é:",
+    "options": [
+      "Indefinido masculino",
+      "Definido feminino",
+      "Indefinido feminino",
+      "Definido masculino",
+      "Interjeição feminina"
+    ],
+    "correct_answer": 1,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "Assinale a alternativa que contém uma conjunção coordenativa aditiva.",
+    "options": [
+      "mas",
+      "portanto",
+      "e",
+      "porque",
+      "embora"
+    ],
+    "correct_answer": 2,
+    "difficulty": "EASY",
+    "subject": "POR"
+  },
+  {
+    "question": "Qual das palavras a seguir é uma proparoxítona?",
+    "options": [
+      "Marinha",
+      "Militar",
+      "Pública",
+      "Soldado",
+      "Nação"
+    ],
+    "correct_answer": 2,
+    "difficulty": "EASY",
+    "subject": "POR"
+  }
+]

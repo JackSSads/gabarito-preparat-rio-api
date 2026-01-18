@@ -1,0 +1,23 @@
+{
+  "name": "api-gabarito-preparatorio",
+  "version": "1.0.0",
+  "author": "Jackson Souza da Silva",
+  "description": "Servidor da aplicação Quiz Gabarito Preparatorio",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "dev": "nodemon ./index.js localhost 5000"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.5",
+    "nodemon": "^3.1.7",
+    "uuid": "^13.0.0",
+    "uuidv4": "^6.2.13"
+  }
+}
