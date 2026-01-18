@@ -34,6 +34,7 @@ const query_get_ranking = () => {
             FROM user u
             JOIN user_scores us ON us.id_user = u.id_user
             LEFT JOIN user_question_answer uqa ON uqa.id_user = u.id_user
+            WHERE u.role <> 'ADMIN'
             GROUP BY u.id_user, u.name, us.score
             ORDER BY us.score DESC;
 
