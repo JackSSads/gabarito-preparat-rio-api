@@ -74,11 +74,11 @@ class UserService {
             const id_user = v4();
 
             const status = "UNLOCKED";
-            
+
             const payload = {
                 id_user, name, email, phone, password_hashed, status, role
             };
-            
+
             const access_expires_at = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000) // 7 dias
 
             role === "TEMP_USER" ? payload.access_expires_at = access_expires_at : false
@@ -87,7 +87,7 @@ class UserService {
             await RankingService.insert_ranking(id_user);
 
             logger.info("UserService: Usuário cadastrado com sucesso.", { name: name, email: email, phone: phone, role: role, status: status, access_expires_at: access_expires_at });
-            return { status: 200, message: "Usuário cadastrado com sucesso.", id_user: id_user };
+            return { status: 200, message: "Usuário cadastrado com sucesso.", name: name };
         } catch (error) {
             logger.error("UserService: Erro ao cadastrar usuário.", { name: name, email: email, phone: phone, role: role, error: error.message });
             throw new Error(error.message || "Erro ao cadastrar usuário.");
