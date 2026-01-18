@@ -39,8 +39,8 @@ class AuthService {
 
             if (
                 user.role === "TEMP_USER"
-                && result.access_expires_at
-                && new Date() > new Date(result.access_expires_at)
+                && user.access_expires_at
+                && new Date() > new Date(user.access_expires_at)
             ) {
                 await query_update_state_user_by_id(user.id_user);
                 throw new Error("Acesso temporário expirado.");
