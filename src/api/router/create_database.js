@@ -1,9 +1,9 @@
 const router = require("express").Router();
 const logger = require("../../../logger");
 const { create_database } = require("../../services/createDatabaseService");
-const { authorize } = require("../../resources/isAtuthenticaded");
+const { isAuthenticated, authorize } = require("../../resources/isAtuthenticaded");
 
-router.get("/", authorize(["ADMIN"]), async (req, res) => {
+router.get("/", isAuthenticated, authorize(["ADMIN"]), async (req, res) => {
     /*
         CRIAÇÃO DAS TABELAS DO BANCO DE DADOS
         A rota pede nível de ADMIN meramente para no dia a dia

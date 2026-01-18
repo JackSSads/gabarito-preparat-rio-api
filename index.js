@@ -31,7 +31,7 @@ app.use("/api/user", userRouter);
 app.use("/api/ranking", rankingRouter);
 app.use("/api/question", isAuthenticated, questionRouter);
 app.use("/api/question_answer", isAuthenticated, questionAnswerRouter);
-app.use("/api/create_database", isAuthenticated, createDatabaseRouter);
+app.use("/api/create_database", createDatabaseRouter);
 
 app.listen(process.env.PORT_BACK || PORT, () => {
     logger.info(`Servidor iniciado na porta ${process.env.PORT_BACK || PORT}`);
