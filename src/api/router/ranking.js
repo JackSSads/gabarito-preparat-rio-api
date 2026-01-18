@@ -2,9 +2,9 @@ const router = require("express").Router();
 const logger = require("../../../logger");
 const RankingService = require("../../services/rankingService");
 
-const { authorize } = require("../../resources/isAtuthenticaded");
+const { isAuthenticated, authorize } = require("../../resources/isAtuthenticaded");
 
-router.get("/", authorize(["ADMIN", "USER", "TEMP_USER"]), async (req, res) => {
+router.get("/", async (req, res) => {
     logger.info("GET /ranking");
 
     try {
@@ -15,7 +15,7 @@ router.get("/", authorize(["ADMIN", "USER", "TEMP_USER"]), async (req, res) => {
     };
 });
 
-router.post("/", authorize(["ADMIN", "USER", "TEMP_USER"]), async (req, res) => {
+router.post("/", isAuthenticated, authorize(["ADMIN", "USER", "TEMP_USER"]), async (req, res) => {
     logger.info("POST /ranking");
 
     const { id_user, score } = req.body;

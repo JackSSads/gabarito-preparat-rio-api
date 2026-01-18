@@ -28,7 +28,7 @@ const createDatabaseRouter = require("./src/api/router/create_database");
 
 app.use("/api/auth", authRouter);
 app.use("/api/user", userRouter);
-app.use("/api/ranking", isAuthenticated, rankingRouter);
+app.use("/api/ranking", rankingRouter);
 app.use("/api/question", isAuthenticated, questionRouter);
 app.use("/api/question_answer", isAuthenticated, questionAnswerRouter);
 app.use("/api/create_database", isAuthenticated, createDatabaseRouter);
