@@ -30,12 +30,12 @@ router.get("/:id_question", authorize(["ADMIN", "USER", "TEMP_USER"]), async (re
 });
 
 router.post("/", authorize(["ADMIN"]), async (req, res) => {
-    const { question, options, correct_answer, difficulty, subject } = req.body;
+    const { question, text, options, correct_answer, difficulty, subject } = req.body;
 
     logger.api("POST /question");
 
     try {
-        const result = await QuestionService.insert_into_question(question, options, correct_answer, difficulty, subject);
+        const result = await QuestionService.insert_into_question(question, text, options, correct_answer, difficulty, subject);
         res.status(200).send({ message: result.message });
     } catch (error) {
         res.status(500).send({ message: error.message, status: false });
@@ -57,10 +57,10 @@ router.post("/massive_insert", authorize(["ADMIN"]), async (req, res) => {
 
 router.put("/:id_question", authorize(["ADMIN"]), async (req, res) => {
     const { id_question } = req.params;
-    const { question, options, correct_answer, difficulty, subject } = req.body;
+    const { question, text, options, correct_answer, difficulty, subject } = req.body;
 
     try {
-        const result = await QuestionService.update_question(id_question, question, options, correct_answer, difficulty, subject);
+        const result = await QuestionService.update_question(id_question, question, text, options, correct_answer, difficulty, subject);
         res.status(200).send({ message: result.message });
     } catch (error) {
         res.status(500).send({ message: error.message, status: false });

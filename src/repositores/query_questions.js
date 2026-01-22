@@ -76,15 +76,17 @@ const query_select_options = (id_question) => {
     });
 };
 
-const query_insert_into = (id_question, question, difficulty, subject) => {
+const query_insert_into = (id_question, question, text = null, difficulty, subject) => {
     return new Promise((resolve, reject) => {
         const sql = `
             INSERT INTO questions
-            (id_question, question, correct_question_id, difficulty, subject)
-            VALUES (?,?,?,?,?);
+            (id_question, question, correct_question_id, difficulty, subject ${text ? ", text" : ""})
+            VALUES (?,?,?,?,? ${text ? ",?" : ""});
         `;
 
         const values = [id_question, question, null, difficulty, subject];
+
+        text && values.push(text);
 
         pool.query(sql, values, (err, result) => {
             if (err) reject(err);
@@ -110,18 +112,19 @@ const query_update_correct_answer = (id_question, correct_answer) => {
     });
 };
 
-const query_update_by_id = (id_question, question, correct_question_id, difficulty, subject) => {
+const query_update_by_id = (id_question, question, text, correct_question_id, difficulty, subject) => {
     return new Promise((resolve, reject) => {
         const sql = `
             UPDATE questions
             SET
             question = ?,
+            text = ?,
             correct_question_id = ?,
             difficulty = ?,
             subject = ?
             WHERE id_question = ?;`;
 
-        const values = [question, correct_question_id, difficulty, subject, id_question];
+        const values = [question, text, correct_question_id, difficulty, subject, id_question];
 
         pool.query(sql, values, (err, result) => {
             if (err) reject(err);

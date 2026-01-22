@@ -5,6 +5,7 @@ const create_table_questions = () => {
         const sql = `
             CREATE TABLE IF NOT EXISTS questions (
                 id_question 		VARCHAR(36) NOT NULL PRIMARY KEY,
+                text				TEXT DEFAULT NULL,
                 question 			TEXT NOT NULL,
                 correct_question_id	VARCHAR(36),
                 difficulty 			ENUM("EASY", "MEDIUM", "HARD"),

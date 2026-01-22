@@ -27,6 +27,7 @@ class QuestionService {
                     "correct_question_id": question.correct_question_id,
                     "difficulty": question.difficulty,
                     "subject": question.subject,
+                    "text": question.text,
                     "options": questionOptions
                 };
             }));
@@ -84,14 +85,14 @@ class QuestionService {
         };
     };
 
-    async insert_into_question(question, options, correct_answer, difficulty, subject) {
-        logger.info("QuestionService: Cadastrando nova pergunta.", { question: question, options: options, correct_answer: correct_answer, difficulty: difficulty, subject: subject });
+    async insert_into_question(question, text, options, correct_answer, difficulty, subject) {
+        logger.info("QuestionService: Cadastrando nova pergunta.", { question: question, text: text, options: options, correct_answer: correct_answer, difficulty: difficulty, subject: subject });
 
         try {
             logger.info("QuestionService: Cadastrando pergunta.");
             
             const id_question = v4();
-            await query_insert_into(id_question, question, difficulty, subject);
+            await query_insert_into(id_question, question, text, difficulty, subject);
 
             logger.info("QuestionService: Inserindo as opções de respostas.");
             const insert_into_question_options = await QuestionOptionsService.insert_into_question_options(id_question, options, correct_answer);
@@ -114,7 +115,7 @@ class QuestionService {
         try {
             logger.info("QuestionService: Cadastrando lista de questões.");
             list_questions.map(async (question) => {
-                await this.insert_into_question(question.question, question.options, question.correct_answer, question.difficulty, question.subject);
+                await this.insert_into_question(question.question, question.text, question.options, question.correct_answer, question.difficulty, question.subject);
             });
 
             logger.info(`QuestionService: ${list_questions.length || 0} perguntas cadastrada com sucesso`);
@@ -125,10 +126,11 @@ class QuestionService {
         };
     };
 
-    async update_question(id_question, question, options, correct_question_id, difficulty, subject) {
+    async update_question(id_question, question, text, options, correct_question_id, difficulty, subject) {
         logger.info("QuestionService: Atualizando questão", {
             id_question: id_question,
             question: question,
+            text: text,
             options: options,
             correct_question_id: correct_question_id,
             difficulty: difficulty,
@@ -137,7 +139,7 @@ class QuestionService {
 
         try {
             await this.select_question_by_id(id_question);
-            await query_update_by_id(id_question, question, correct_question_id, difficulty, subject);
+            await query_update_by_id(id_question, question, text, correct_question_id, difficulty, subject);
             await QuestionOptionsService.update_options(options);
 
             logger.info("QuestionService: Questão atualizada com sucesso.");
