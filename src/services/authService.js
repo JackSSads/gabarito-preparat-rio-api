@@ -19,14 +19,14 @@ class AuthService {
 
             if (!user) {
                 logger.warn("AuthService: Falha no login - Usuário não encontrado.", { email: email });
-                throw new Error("Usuário não encontrado.");
+                return { message: "Usuário não encontrado.", status: 404 };
             };
 
             const isPasswordValid = compareSync(password, user.password);
 
             if (!isPasswordValid) {
                 logger.warn("AuthService: Falha no login - Senha inválida", { email: email });
-                throw new Error("Senha inválida");
+                return { message: "Senha inválida", status: 401 };
             };
 
             const token = sign({ id_user: user.id_user, role: user.role }, process.env.JWT_SECRET, {
@@ -34,7 +34,7 @@ class AuthService {
             });
 
             if (!user?.is_active) {
-                throw new Error("Usuário bloqueado.");
+                return { message: "Usuário bloqueado. Entre em contato com o suporte.", status: 403 };
             };
 
             if (
@@ -43,7 +43,7 @@ class AuthService {
                 && new Date() > new Date(user.access_expires_at)
             ) {
                 await query_update_state_user_by_id(user.id_user);
-                throw new Error("Acesso temporário expirado.");
+                return { message: "Acesso temporário expirado.", status: 403 };
             };
 
             logger.info("AuthService: Login bem-sucedico.", { email: email, id_user: user.id_user, token: token });
