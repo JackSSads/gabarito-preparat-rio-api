@@ -1,14 +1,16 @@
+require("dotenv").config();
 const router = require("express").Router();
 const logger = require("../../../logger");
 const { create_database } = require("../../services/createDatabaseService");
 const { isAuthenticated, authorize } = require("../../resources/isAtuthenticaded");
 
-router.get("/", /* isAuthenticated, authorize(["ADMIN"]), */ async (req, res) => {
-    /*
-        CRIAÇÃO DAS TABELAS DO BANCO DE DADOS
-        A rota pede nível de ADMIN meramente para no dia a dia
-        não ser acessada por outros usuários, mesmo sendo irrelevante.
-    */
+const env = process.env.NODE_ENV === "development";
+
+const is_development = env
+  ? []
+  : [isAuthenticated, authorize(["ADMIN"])];
+
+router.get("/", ...is_development, async (req, res) => {
     logger.info("GET /create_database");
 
     try {
